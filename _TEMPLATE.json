@@ -1,0 +1,30 @@
+[
+  {
+    "_note": "File bắt đầu bằng dấu _ sẽ bị bỏ qua. Sao chép thành knowledge/rules/<TÊN_TIÊU_CHUẨN>.json (ví dụ QCVN.json, NFPA.json, ASHRAE.json, JIS.json) rồi điền số liệu thật. Mọi giá trị dưới đây chỉ là chỗ trống để minh họa cú pháp.",
+    "id": "<TIEUCHUAN>-001",
+    "standard": "<TIEUCHUAN>",
+    "ref": "<số hiệu, mục, điều>",
+    "title": "Mẫu: kích thước (mm) lấy từ đối tượng DIMENSION",
+    "description": "<mô tả điều khoản bằng lời của bạn>",
+    "target": {"type": "dimension", "layer": "*TEN_LAYER*"},
+    "op": ">=", "value": 0, "unit": "mm"
+  },
+  {
+    "id": "<TIEUCHUAN>-002",
+    "standard": "<TIEUCHUAN>",
+    "ref": "<số hiệu, mục, điều>",
+    "title": "Mẫu: diện tích (m2) của từng polyline kín",
+    "description": "<mô tả>",
+    "target": {"type": "area", "layer": "*TEN_LAYER*"},
+    "op": "<=", "value": 0, "unit": "m2"
+  },
+  {
+    "id": "<TIEUCHUAN>-003",
+    "standard": "<TIEUCHUAN>",
+    "ref": "<số hiệu, mục, điều>",
+    "title": "Mẫu: số lượng block (ví dụ đầu phun, đầu báo cháy)",
+    "description": "<mô tả>",
+    "target": {"type": "block_count", "layer": "*", "block": "*TEN_BLOCK*"},
+    "op": ">=", "value": 0, "unit": "count"
+  }
+]

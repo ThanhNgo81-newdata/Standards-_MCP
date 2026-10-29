@@ -1,0 +1,20 @@
+[
+  {
+    "id": "TCVN-001",
+    "standard": "TCVN",
+    "ref": "TCVN <số hiệu> mục <x.y> (ĐIỀN THEO TÀI LIỆU THẬT)",
+    "title": "Chiều rộng thông thủy cửa thoát nạn (VÍ DỤ MINH HỌA)",
+    "description": "Cửa thoát nạn phải có chiều rộng thông thủy tối thiểu 1200 mm. Luật mẫu theo ví dụ trong video, hãy thay bằng điều khoản thật.",
+    "target": {"type": "dimension", "layer": "*DOOR*"},
+    "op": ">=", "value": 1200, "unit": "mm"
+  },
+  {
+    "id": "TCVN-002",
+    "standard": "TCVN",
+    "ref": "TCVN <số hiệu> mục <x.y> (ĐIỀN THEO TÀI LIỆU THẬT)",
+    "title": "Bề rộng hành lang (VÍ DỤ MINH HỌA)",
+    "description": "Hành lang chung có bề rộng tối thiểu 1400 mm. Luật mẫu, cần thay bằng điều khoản thật.",
+    "target": {"type": "dimension", "layer": "*CORRIDOR*"},
+    "op": ">=", "value": 1400, "unit": "mm"
+  }
+]
